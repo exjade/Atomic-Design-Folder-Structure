@@ -26,7 +26,7 @@ It's for productivity purposes and not wasting time structuring everything when 
 
 * Components => Consisting of HTML and styling
 * Constants => all routes together for easy access
-* Pages => API connectivity related code
+* Pages => all our Pages
 * Hooks => custom React Hooks live here
 * styles => tailwind.css / css / modules
 * helpers => Protected routes
