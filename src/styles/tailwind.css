@@ -1,0 +1,39 @@
+/*eslint-disable-next-line  */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* 300 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+/* 400 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+/* 500 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+;
+/* 600 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+/* 700 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
