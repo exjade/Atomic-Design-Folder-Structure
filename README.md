@@ -21,7 +21,7 @@ It's for productivity purposes and not wasting time structuring everything when 
   ─ services
   ─ styles
        └ tailwind.css
-  ─ licenses
+       └ app.css 
 ```
 
 * Components => Consisting of HTML and styling
@@ -31,8 +31,8 @@ It's for productivity purposes and not wasting time structuring everything when 
 * styles => tailwind.css / css / modules
 * helpers => Protected routes
 * context => context API 
-* Services => Firebase Async Functions
-* Lib => firebase config live here
+* Services => Firebase Async Functions (Firebase/firestore)
+* Lib => firebase config live here  (Firebase/firestore)
 
 - Eslint Style Guide [Airbnb](https://github.com/airbnb/javascript).
 - Run an lint test before each commit [Husky](https://typicode.github.io/husky/#/)
