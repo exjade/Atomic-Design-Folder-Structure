@@ -1,19 +1,40 @@
-**Atomic Design**
+**React - Project Structure**
 
-I am learning **the Atomic Design Methodology** created by Brad Frost. 
- 
-Frost proposes to design based on components, that is, small and modular elements that together allow us to create more complex pages or sections of our project.
+This is my base template to work on my future projects. 
 
-The hierarchy of these elements is based on the fundamental concepts of chemistry:
+It's for productivity purposes and not wasting time structuring everything when I start a new project.
 
-- Atoms
-- Molecules
-- Organisms
+## Folder Structure 
 
-Two more components are also included: 
-> *Wich complement the system and help us to build more complex structures.*
-- Templates
-- Pages
+```bash
+  ─ components
+  ─ constants 
+       └ routes.js
+  ─ context API
+  ─ error 
+       └ ErrorBoundary.js
+  ─ helpers
+  ─ hooks
+  ─ lib
+    └ firebase.js
+  ─ pages
+  ─ services
+  ─ styles
+       └ tailwind.css
+  ─ licenses
+```
 
+* Components => Consisting of HTML and styling
+* Constants => all routes together for easy access
+* Pages => API connectivity related code
+* Hooks => custom React Hooks live here
+* styles => tailwind.css / css / modules
+* helpers => Protected routes
+* context => context API 
+* Services => Firebase Async Functions
+* Lib => firebase config live here
+
+- Eslint Style Guide [Airbnb](https://github.com/airbnb/javascript).
+- Run an lint test before each commit [Husky](https://typicode.github.io/husky/#/)
 
 
