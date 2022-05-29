@@ -1,8 +1,11 @@
 **React - Project Structure**
 
-This is my base template to work on my future projects. 
+This is my Atomic Design template to work on my projects that require high scalability. 
 
 It's for productivity purposes and not wasting time structuring everything when I start a new project.
+
+I am using my [basic folder structure](https://github.com/exjade/React-Folder-Structure) but focused on working with the [Atomic Design methodology](https://atomicdesign.bradfrost.com/table-of-contents/) and the powerful frontend workshop environment tool: [Storybook](https://storybook.js.org/).
+
 
 ## Folder Structure 
 
@@ -36,5 +39,7 @@ It's for productivity purposes and not wasting time structuring everything when 
 
 - Eslint Style Guide [Airbnb](https://github.com/airbnb/javascript).
 - Run an lint test before each commit [Husky](https://typicode.github.io/husky/#/)
+- Atomic Design Official Website - https://atomicdesign.bradfrost.com/table-of-contents/
+- Storybook - https://storybook.js.org/
 
 
