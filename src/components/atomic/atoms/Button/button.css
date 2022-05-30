@@ -1,0 +1,33 @@
+.type-primary {
+    background-color: var(--blue-hard);
+    border-color: var(--blue-soft);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 4px 5px var(--gray-soft);
+}
+
+.type-primary:hover {
+    filter: brightness(1.5);
+    -webkit-filter: brightness(1.5);
+}
+.type-primary:active {
+    filter: brightness(0.9);
+    -webkit-filter: brightness(0.9);
+}
+
+.type-secondary {
+    background-color: var(--gray-hard);
+    border-color: var(--gray-soft);
+    color: var(--white);
+    cursor: pointer;
+    box-shadow: 0px 4px 5px var(--blue-light);
+}
+
+.type-secondary:hover {
+    filter: brightness(1.2);
+    -webkit-filter: brightness(1.2);
+}
+.type-secondary:active {
+    filter: brightness(0.9);
+    -webkit-filter: brightness(0.9);
+}
