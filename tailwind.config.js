@@ -18,7 +18,7 @@ module.exports = {
       },
       black: {
         normal: '#000000',
-      }
+      },
     },
     // FONTS
     fontFamily: {

@@ -37,3 +37,13 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
+
+:root {
+    --blue-hard: #0070f3;
+    --blue-soft: #00a8ff;
+    --blue-light: #00d2ff;
+    --white: #ffffff;
+    --gray-hard: #868e96;
+    --gray-soft: #b3b7bb;
+    --green-primary: rgb(29, 206, 76);
+}
