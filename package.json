@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "atomic-design-folder-structure",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,7 +12,9 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
+    "web-vitals": "^2.1.0",
+    "prop-types": "^15.8.1",
+    "@storybook/testing-library": "^0.0.11"
   },
   "scripts": {
     "build:css": "postcss src/styles/tailwind.css -o src/styles/app.css",
@@ -23,7 +25,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "storybook": "start-storybook -p 6006 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "eslintConfig": {
     "extends": [
@@ -33,7 +37,17 @@
     "rules": {},
     "parserOptions": {
       "ecmaFeatures": {}
-    }
+    },
+    "overrides": [
+      {
+        "files": [
+          "**/*.stories.*"
+        ],
+        "rules": {
+          "import/no-anonymous-default-export": "off"
+        }
+      }
+    ]
   },
   "browserslist": {
     "production": [
@@ -48,18 +62,28 @@
     ]
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.5.5",
+    "@storybook/addon-essentials": "^6.5.5",
+    "@storybook/addon-interactions": "^6.5.5",
+    "@storybook/addon-links": "^6.5.5",
+    "@storybook/builder-webpack5": "^6.5.5",
+    "@storybook/manager-webpack5": "^6.5.5",
+    "@storybook/node-logger": "^6.5.5",
+    "@storybook/preset-create-react-app": "^4.1.1",
+    "@storybook/react": "^6.5.5",
     "autoprefixer": "^10.4.7",
+    "babel-plugin-named-exports-order": "^0.0.2",
     "eslint": "^7.32.0 || ^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": "^8.0.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
-    "prop-types": "^15.8.1",
     "tailwindcss": "^3.0.24",
-    "husky": "^8.0.0"
+    "webpack": "^5.72.1"
   }
 }
