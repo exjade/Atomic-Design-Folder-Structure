@@ -15,12 +15,52 @@ module.exports = {
   },
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
+      arrowFunctions: true,
+      destructuring: true,
+      modules: true,
+      templateStrings: true
     },
     ecmaVersion: "latest",
     sourceType: "module"
   },
   rules: {
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/label-has-associated-control": 0,
+    "jsx-a11y/label-has-for": [
+      "off",
+      {
+        required: {
+          some: [
+            "nesting",
+            "id"
+          ]
+        }
+      }
+    ],
+    "arrow-body-style": 0,
+    "jsx-a11y/aria-role": [
+      "off",
+      {
+        allowedInvalidRoles: [
+          "text"
+        ],
+        ignoreNonDOM: false
+      }
+    ],
+    "react/function-component-definition": [
+      "off",
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function"
+      }
+    ],
+    'jsx-a11y/no-redundant-roles': [
+      'error',
+      {
+        nav: ['navigation'],
+      },
+    ],
     "padded-blocks": [
       "off",
       {
@@ -57,7 +97,6 @@ module.exports = {
     "react/no-array-index-key": 0,
     "react/react-in-jsx-scope": 0,
     "react/prefer-stateless-function": 0,
-    "react/forbid-prop-types": 0,
     "react/jsx-props-no-spreading": 0,
     "react/no-unescaped-entities": 0,
     "jsx-a11y/accessible-emoji": 0,
@@ -79,6 +118,19 @@ module.exports = {
       {
         avoidEscape: true,
         allowTemplateLiterals: true
+      }
+    ],
+    "comma-style": [
+      "off",
+      null,
+      {
+        exceptions: {}
+      }
+    ],
+    "react/no-children-prop": [
+      "off",
+      {
+        allowFunctions: false
       }
     ]
   },
